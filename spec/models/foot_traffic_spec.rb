@@ -22,7 +22,7 @@ RSpec.describe FootTraffic, type: :model do
       it 'generates the art gallery traffic report' do
         report = foot_traffic.generate_traffic_report(foot_traffic,
                                                       uploader)
-        result = 'Room 0, 20 minute average visit, 2 visitor(s) total'
+        result = 'Room 0, 20 minute average visit, 2 visitor(s) total '
         expect(report).to eq(result)
       end
     end
