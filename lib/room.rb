@@ -3,7 +3,7 @@ class Room
   attr_accessor :visits
 
   def initialize(visits)
-    @visits = visits 
+    @visits = visits
   end
 
   def print_info
