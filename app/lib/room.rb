@@ -7,8 +7,9 @@ class Room
   end
 
   def print_info
-    "Room #{room_id}, #{average_time} minute average visit,
-    #{total_visitors} visitor \n"
+    report = "Room #{room_id}, #{average_time} minute average visit,"
+    report += " #{total_visitors} visitor(s) total"
+    report
   end
 
   private
