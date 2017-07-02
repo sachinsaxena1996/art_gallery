@@ -11,6 +11,7 @@ gem 'rails', '5.0.0.1'
 gem 'sass-rails'
 gem 'turbolinks'
 gem 'uglifier'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug', platform: :mri
