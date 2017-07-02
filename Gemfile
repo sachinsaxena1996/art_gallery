@@ -9,7 +9,6 @@ gem 'jquery-rails'
 gem 'puma'
 gem 'rails', '5.0.0.1'
 gem 'sass-rails'
-gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier'
 
@@ -17,6 +16,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
   gem 'simplecov', require: false
+  gem 'sqlite3'
 end
 
 group :development do
@@ -26,4 +26,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'web-console'
+end
+
+group :production do
+  gem 'pg'
 end
