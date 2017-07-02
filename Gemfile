@@ -8,10 +8,10 @@ gem 'jbuilder'
 gem 'jquery-rails'
 gem 'puma'
 gem 'rails', '5.0.0.1'
+gem 'rails_12factor'
 gem 'sass-rails'
 gem 'turbolinks'
 gem 'uglifier'
-gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug', platform: :mri
