@@ -1,0 +1,21 @@
+<%= form_for(foot_traffic) do |f| %>
+  <% if foot_traffic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(foot_traffic.errors.count, "error") %> prohibited this foot_traffic from being saved:</h2>
+
+      <ul>
+      <% foot_traffic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.file_field :log %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Generate Gallery Traffic Report' %>
+  </div>
+<% end %>
